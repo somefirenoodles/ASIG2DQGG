@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Esta parte guarda la configuracion basica del documento y permite que la pagina se vea bien en el navegador. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Vital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; background-color: #0c1221; font-family: 'Open Sans', Arial, sans-serif; color: white;">
+
+    <!-- El header se utiliza para mostrar el titulo principal del sitio. -->
+    <header style="background-color: #214573; padding: 22px; text-align: center;">
+        <h1 style="margin: 0; font-family: Georgia, 'Times New Roman', serif; color: white;">Salud Vital</h1>
+    </header>
+
+    <!-- El nav permite moverse entre las paginas principales de la asignacion. -->
+    <nav style="background-color: #1D232F; padding: 14px; text-align: center;">
+        <a href="HOME.html" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 14px;">Home</a>
+        <a href="BLOG.html" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 14px;">Blog</a>
+        <a href="REGISTRO.html" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 14px;">Registro</a>
+        <a href="CONTACTO.html" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 14px;">Contactanos</a>
+    </nav>
+
+    <main style="max-width: 1100px; margin: 0 auto; padding: 28px 18px;">
+        <!-- Esta seccion contiene la lista destacada y las noticias pedidas para la pagina HOME. -->
+        <section style="background-color: #1D232F; border: 2px solid #00bbff; padding: 22px; border-radius: 8px;">
+            <h2 style="margin-top: 0; font-family: Georgia, 'Times New Roman', serif; color: white;">BLOG DE NOTICIAS</h2>
+
+            <!-- La lista resume los temas principales antes de presentar cada noticia en su contenedor. -->
+            <ul style="padding-left: 22px; margin-bottom: 26px; color: white;">
+                <li>Acceso a medicamentos en Europa</li>
+                <li>Cambio climatico y enfremedades respiratorias</li>
+                <li>Incremento de problemas cardiovasculares en jovenes</li>
+            </ul>
+
+            <!-- Cada article separa una noticia con imagen, resumen y enlace a su fuente. -->
+            <article style="background-color: #0c1221; border: 1px solid #00bbff; padding: 18px; margin-bottom: 18px; border-radius: 8px;">
+                <h3 style="font-family: Georgia, 'Times New Roman', serif; font-weight: bold; color: white;">Acceso a medicamentos en Europa</h3>
+                <img src="https://www.reuters.com/resizer/v2/UQ6YRCXVPRJ3RBHAQHLWLPYKNU.jpg?auth=4556065735e7106c034825bda3a5b0fb6c17b2cf8df4cd34ef3ece3e14d1207e&width=1080&quality=80" alt="Medicamentos" style="width: 100%; max-width: 420px; height: auto; border-radius: 8px; border: 2px solid #214573;">
+                <p>La disponibilidad de nuevos tratamientos enfrenta retos por regulaciones, precios y estrategias de la industria farmaceutica.</p>
+                <a href="https://www.reuters.com/world/europe/european-health-chief-says-eu-must-flex-regional-muscle-ensure-drug-access-2026-04-22/" target="_blank" style="display: inline-block; background-color: #00bbff; color: #0c1221; font-weight: bold; text-decoration: none; padding: 10px 16px; border-radius: 6px;">Ver Mas</a>
+            </article>
+
+            <article style="background-color: #0c1221; border: 1px solid #00bbff; padding: 18px; margin-bottom: 18px; border-radius: 8px;">
+                <h3 style="font-family: Georgia, 'Times New Roman', serif; font-weight: bold; color: white;">Cambio climatico y enfermedades respiratorias</h3>
+                <img src="https://i.guim.co.uk/img/media/cdf79e6b4e3658513a82d6f3c42c595d74439e55/0_0_5088_3392/master/5088.jpg?width=1900&dpr=2&s=none&crop=none" alt="Contaminacion ambiental" style="width: 100%; max-width: 420px; height: auto; border-radius: 8px; border: 2px solid #214573;">
+                <p>El aumento de temperaturas y cambios ambientales puede extender temporadas de polen y agravar alergias respiratorias.</p>
+                <a href="https://www.theguardian.com/environment/2026/apr/22/pollen-season-in-uk-and-mainland-europe-extended-by-climate-breakdown" target="_blank" style="display: inline-block; background-color: #00bbff; color: #0c1221; font-weight: bold; text-decoration: none; padding: 10px 16px; border-radius: 6px;">Ver Mas</a>
+            </article>
+
+            <article style="background-color: #0c1221; border: 1px solid #00bbff; padding: 18px; border-radius: 8px;">
+                <h3 style="font-family: Georgia, 'Times New Roman', serif; font-weight: bold; color: white;">Incremento de problemas cardiovasculares en jovenes</h3>
+                <img src="https://static.toiimg.com/thumb/129887126.jpg?photoid=129887126&imgsize=526415&width=600&height=335&resizemode=75" alt="Salud cardiovascular" style="width: 100%; max-width: 420px; height: auto; border-radius: 8px; border: 2px solid #214573;">
+                <p>Los habitos diarios, el monitoreo temprano y la prevencion son claves para reducir riesgos cardiacos en adultos jovenes.</p>
+                <a href="https://timesofindia.indiatimes.com/health/fit-but-still-at-risk-doctors-reveal-why-heart-problems-are-rising-in-young-adults-and-how-to-protect-your-heart/photostory/129887116.cms" target="_blank" style="display: inline-block; background-color: #00bbff; color: #0c1221; font-weight: bold; text-decoration: none; padding: 10px 16px; border-radius: 6px;">Ver Mas</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- El footer guarda enlaces adicionales y el selector de idioma solicitado en el documento. -->
+    <footer style="background-color: #214573; text-align: center; padding: 22px;">
+        <h3 style="font-family: Georgia, 'Times New Roman', serif; color: white;">Enlaces adicionales</h3>
+        <a href="#" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 10px;">Preguntas frecuentes</a>
+        <a href="#" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 10px;">Privacidad</a>
+        <select style="margin-left: 10px; padding: 6px; background-color: #1D232F; color: white; border: 1px solid #00bbff;">
+            <option>Español</option>
+            <option>Inglés</option>
+        </select>
+    </footer>
+
+</body>
+</html>

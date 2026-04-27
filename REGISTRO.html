@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Salud Vital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; background-color: #0c1221; background-image: url('vegetales.png'); background-size: cover; background-position: center; background-attachment: fixed; font-family: 'Open Sans', Arial, sans-serif; color: #1D232F;">
+
+    <header style="background-color: #214573; padding: 22px; text-align: center;">
+        <h1 style="margin: 0; font-family: Georgia, 'Times New Roman', serif; color: white;">Salud Vital</h1>
+    </header>
+
+    <nav style="background-color: #1D232F; padding: 14px; text-align: center;">
+        <a href="HOME.html" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 14px;">Home</a>
+        <a href="BLOG.html" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 14px;">Blog</a>
+        <a href="REGISTRO.html" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 14px;">Registro</a>
+        <a href="CONTACTO.html" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 14px;">Contactanos</a>
+    </nav>
+
+    <main style="max-width: 760px; margin: 32px auto; padding: 0 18px;">
+        <section style="background-color: white; border: 4px solid #f28c28; padding: 26px; border-radius: 8px;">
+            <div style="text-align: center;">
+                <h2 style="font-family: Georgia, 'Times New Roman', serif; color: #214573;">Registro Nutricional</h2>
+                <p>Completa tu perfil de salud y alimentacion.</p>
+            </div>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset style="border: 1px solid #214573; margin-bottom: 18px;">
+                    <legend style="font-weight: bold; color: #214573;">Informacion personal</legend>
+
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Maria Garcia Lopez" required style="width: 95%; padding: 8px; margin-top: 4px;">
+                    <br><br>
+
+                    <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required style="padding: 8px; margin-top: 4px;">
+                    <br><br>
+
+                    <label for="correo">Correo electronico:</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="Ejemplo: correo@email.com" required style="width: 95%; padding: 8px; margin-top: 4px;">
+                    <br><br>
+
+                    <label for="telefono">Numero telefonico:</label><br>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 6123-4567" pattern="[0-9]{4}-[0-9]{4}" required style="width: 95%; padding: 8px; margin-top: 4px;">
+                    <br><br>
+
+                    <label>Genero:</label><br>
+                    <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="femenino" name="genero" value="Femenino">
+                    <label for="femenino">Femenino</label><br>
+                    <input type="radio" id="otro" name="genero" value="Otro">
+                    <label for="otro">Otro</label>
+                    <br><br>
+
+                    <label for="direccion">Direccion:</label><br>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ejemplo: Ciudad de Panama, calle principal" required style="width: 95%; padding: 8px; margin-top: 4px;">
+                </fieldset>
+
+                <fieldset style="border: 1px solid #214573; margin-bottom: 18px;">
+                    <legend style="font-weight: bold; color: #214573;">Datos fisicos</legend>
+
+                    <label for="peso">Peso:</label><br>
+                    <input type="number" id="peso" name="peso" placeholder="Ejemplo: 70" required style="width: 95%; padding: 8px; margin-top: 4px;">
+                    <br><br>
+
+                    <label for="altura">Altura:</label><br>
+                    <input type="number" id="altura" name="altura" placeholder="Ejemplo: 170" required style="width: 95%; padding: 8px; margin-top: 4px;">
+                    <br><br>
+
+                    <label for="actividad">Nivel de actividad fisica:</label><br>
+                    <select id="actividad" name="actividad" required style="width: 98%; padding: 8px; margin-top: 4px;">
+                        <option value="">Seleccione una opcion</option>
+                        <option value="Sedentario">Sedentario</option>
+                        <option value="Ligero">Ligero</option>
+                        <option value="Moderado">Moderado</option>
+                        <option value="Intenso">Intenso</option>
+                    </select>
+                </fieldset>
+
+                <fieldset style="border: 1px solid #214573; margin-bottom: 18px;">
+                    <legend style="font-weight: bold; color: #214573;">Objetivo nutricional</legend>
+
+                    <input type="checkbox" id="perder_peso" name="objetivo" value="Perder peso">
+                    <label for="perder_peso">Perder peso</label><br>
+                    <input type="checkbox" id="ganar_masa" name="objetivo" value="Ganar masa muscular">
+                    <label for="ganar_masa">Ganar masa muscular</label><br>
+                    <input type="checkbox" id="mejorar_salud" name="objetivo" value="Mejorar la salud">
+                    <label for="mejorar_salud">Mejorar la salud</label>
+                    <br><br>
+
+                    <label for="alergias">Alergias o restricciones alimentarias:</label><br>
+                    <textarea id="alergias" name="alergias" rows="4" cols="50" placeholder="Ejemplo: alergia al mani, intolerancia a la lactosa" style="width: 95%; padding: 8px; margin-top: 4px;"></textarea>
+                    <br><br>
+
+                    <label for="agua">Cantidad diaria de agua consumida:</label><br>
+                    <input type="range" id="agua" name="agua" min="0" max="5" step="0.5" value="2" oninput="litros.value = agua.value + ' litros'" style="width: 70%;">
+                    <output id="litros">2 litros</output>
+                    <br><br>
+
+                    <label for="foto">Foto de alimentos comunes:</label><br>
+                    <input type="file" id="foto" name="foto" accept="image/*" style="margin-top: 4px;">
+                    <br><br>
+
+                    <label for="hora_comida">Hora habitual de la comida principal:</label><br>
+                    <input type="time" id="hora_comida" name="hora_comida" required style="padding: 8px; margin-top: 4px;">
+                </fieldset>
+
+                <div style="text-align: center;">
+                    <input type="submit" value="Enviar registro" style="background-color: #00bbff; color: #0c1221; border: 0; padding: 10px 16px; border-radius: 6px; font-weight: bold;">
+                    <input type="reset" value="Limpiar formulario" style="background-color: #1D232F; color: white; border: 0; padding: 10px 16px; border-radius: 6px; font-weight: bold;">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer style="background-color: #214573; text-align: center; padding: 22px;">
+        <h3 style="font-family: Georgia, 'Times New Roman', serif; color: white;">Enlaces adicionales</h3>
+        <a href="#" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 10px;">Preguntas frecuentes</a>
+        <a href="#" style="color: #00bbff; font-weight: bold; text-decoration: none; margin: 0 10px;">Privacidad</a>
+        <select style="margin-left: 10px; padding: 6px; background-color: #1D232F; color: white; border: 1px solid #00bbff;">
+            <option>Español</option>
+            <option>Inglés</option>
+        </select>
+    </footer>
+
+</body>
+</html>
